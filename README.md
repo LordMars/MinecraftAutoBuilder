@@ -1,7 +1,13 @@
 Minecraft Auto Builder Script
 
+To run:
+    source minecraft/bin/activate
+        loads up virtual environment
+
 This script is intended to be run while also running minecraft.
 AutoBuilder will control minecraft through the pyautogui library.
+
+Before running th script the player must stand on a block, look down at their feet, and align themselves perpendicular to the block
 
 Provided with a map of locations within the players inventory to the string names of block types in minecraft this script will
     Auto move the player character to given block positions
