@@ -27,3 +27,36 @@ This version of the script will not use image recognition, so the player will ha
     have surrounding terrain of the building area meet certain conditions
     be facing a certain direction in that terrain
     
+
+
+Notes:
+ In reduced debug mode I can use the chunks to determinie what block im on.
+ By way of image recognition I can determine and calculate when Ive moved to a different block by seeing which of those numbers change and in what direction whn I move in a given direction.
+
+ Reduced debug must be turned on then this way:
+    Open the Minecraft menu.
+    Go to "Options" > "Video Settings."
+    Look for the "Reduced Debug Info" option.
+    Set it to "On."
+
+We will then use an image recognition library to actually check when those numbers change
+
+Open debug text
+Start script
+screenshot
+capture the block charachter is on from the chunk coords
+delete screenshot
+move charachter
+take screenshot
+determine if chunk changed in a way that matches intended movement.
+    if not:
+        move in a way to correct
+        delete screenshot
+        take another screenshot
+        repeat
+    if so:
+        continue next step
+
+
+As of 11/18/2023
+This script uses tesseract and the pytesseract module in order o classify screenshots from the game to determine block positions

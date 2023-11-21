@@ -1,2 +1,5 @@
-minecraft/
-minecraft_windows/
+venv/
+venv\
+*.venv/
+*.venv\
+*.png

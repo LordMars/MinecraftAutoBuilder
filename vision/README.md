@@ -1,0 +1,1 @@
+This directory contains the logic needed to capture images of the game screen and parse visual information from it. Mainly The player chracters coordinates in game
